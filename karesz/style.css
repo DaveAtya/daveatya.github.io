@@ -1,0 +1,83 @@
+#grid {
+    grid-template-columns: repeat(30, 30px);
+    grid-template-rows: repeat(20, 30px);
+    display: grid;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+
+h1 {
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: rgb(51, 54, 58);
+    color: white;
+}
+
+.asd {
+    background-color: lightblue;
+    border: 1px solid;
+}
+
+.karesz {
+    background-image: url("Karesz.png");
+    background-size: cover;
+}
+
+.fal {
+    background-color: dimgrey;
+}
+
+.kavics {
+    background: radial-gradient(ellipse at center, var(--color, pink) 47%, lightblue 47%);
+
+}
+
+#klonk {
+    display: flex;
+    justify-content: center;
+}
+
+.butkavics {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--color);
+
+}
+
+[data-color=red] {
+    --color: red;
+}
+
+[data-color=grey] {
+    --color: grey;
+}
+
+[data-color=yellow] {
+    --color: yellow;
+}
+
+[data-color=green] {
+    --color: green;
+}
+
+[data-color=blue] {
+    --color: blue;
+}
+
+[data-color=black] {
+    --color: black;
+}
